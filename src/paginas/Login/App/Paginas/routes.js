@@ -2,11 +2,11 @@ import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 
 
-import Home from '../paginas/Login/App/Paginas/Home'
-import New from '../paginas/Login/App/Paginas/New'
-import Notification from '../paginas/Login/App/Paginas/Notificatin'
-import Profile from '../paginas/Login/App/Paginas/Profile'
-import Search from '../paginas/Login/App/Paginas/Search'
+import Home from '../Paginas/Home'
+import New from '../Paginas/New'
+import Notification from './Notificatin'
+import Profile from './Profile'
+import Search from './Search'
 
 const Tab =  createBottomTabNavigator();
 

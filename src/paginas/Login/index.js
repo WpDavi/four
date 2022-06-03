@@ -3,8 +3,7 @@ import { View, Text, StyleSheet, TextInput, TouchableOpacity, Image } from 'reac
 import * as Animatable from 'react-native-animatable'
 import {useNavigation } from '@react-navigation/native'
 
-
-
+import Routes from './App/Paginas/Routes.js'
 
 
 export default function Login() {
