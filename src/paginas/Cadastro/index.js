@@ -36,7 +36,7 @@ export default function Cadastro() {
                <TextInput 
                style={styles.input}
                placeholderTextColor='white'
-               placeholder="Confirmar senha "/> 
+               placeholder="Confirmar senha"/> 
 
                <TouchableOpacity                             
                 style={styles.botao}>
