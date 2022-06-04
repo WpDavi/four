@@ -4,7 +4,7 @@ import {View, Text, StyleSheet} from 'react-native'
 export default function New(){
     return(
         <View style={stiles.container}>
-            <Text style={stiles.text}>Pagina New</Text>
+            <Text style={stiles.text}>Pagina de Pesquisa</Text>
         </View>
     );
 }

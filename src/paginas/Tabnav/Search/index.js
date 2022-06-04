@@ -4,7 +4,7 @@ import {View, Text, StyleSheet} from 'react-native'
 export default function Search(){
     return(
         <View style={stiles.container}>
-            <Text style={stiles.text}>Pagina Search</Text>
+            <Text style={stiles.text}>Pagina Perfil</Text>
         </View>
     );
 }

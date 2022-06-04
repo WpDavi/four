@@ -4,7 +4,7 @@ import {View, Text, StyleSheet} from 'react-native'
 export default function Notification(){
     return(
         <View style={stiles.container}>
-            <Text style={stiles.text}>Pagina Notification</Text>
+            <Text style={stiles.text}>Botao de post</Text>
         </View>
     );
 }

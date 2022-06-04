@@ -4,7 +4,7 @@ import {View, Text, StyleSheet} from 'react-native'
 export default function Profile(){
     return(
         <View style={stiles.container}>
-            <Text style={stiles.text}>Pagina Profile</Text>
+            <Text style={stiles.text}>Pagina Notificação</Text>
         </View>
     );
 }
