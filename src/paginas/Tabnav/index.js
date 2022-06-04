@@ -6,7 +6,7 @@ import {View, Text, Image, StyleSheet, TouchableOpacity} from 'react-native'
 import {launchCamera, launchImageLibrary} from 'react-native-image-picker';
 
 import Home from './Home';
-import New from './New';
+import Pesquisa from './New'; 
 import Notificatin from './Notificatin';
 import Profile from './Profile';
 import Search from './Search';
@@ -86,7 +86,7 @@ export default function Tabnav(){
 
             <Tab.Screen
             name='Pesquisar'
-            component={New}
+            component={Pesquisa}
             options={{               
                 tabBarIcon:({focused}) => (
                     <View style={{alignItems:'center', justifyContent:'center'}}>
