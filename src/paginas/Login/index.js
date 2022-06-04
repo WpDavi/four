@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, TextInput, TouchableOpacity, Image } from 'reac
 import * as Animatable from 'react-native-animatable'
 import {useNavigation } from '@react-navigation/native'
 
-import Routestab from './App/Paginas/Routes.js'
+
 
 
 export default function Login() {
@@ -35,7 +35,7 @@ export default function Login() {
                 style={styles.input}
                 />
                 <TouchableOpacity
-                onPress={() => navigation.navigate('New')}
+                onPress={() => navigation.navigate('Tabnav')}
                  style={styles.button}>
                     <Text style={styles.buttonText}>
                         Entrar

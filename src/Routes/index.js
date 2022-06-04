@@ -8,11 +8,9 @@ import Welcome from '../paginas/inicial';
 import Login from '../paginas/Login';
 import Cadastro from '../paginas/Cadastro'
 
-import Home from '../paginas/Login/App/Paginas/Home'
-import New from '../paginas/Login/App/Paginas/New'
-import Notificatin from '../paginas/Login/App/Paginas/Notificatin'
-import Profile from '../paginas/Login/App/Paginas/Profile'
-import Search from '../paginas/Login/App/Paginas/Search'
+import Tabnav from '../paginas/Tabnav';
+
+
 
 
 
@@ -38,7 +36,14 @@ export default function Routes(){
                 name='Cadastro'
                 component={Cadastro}
                 options={{ headerShown: false}}
-            />                        
+            />    
+
+             <Stack.Screen
+                name='Tabnav'
+                component={Tabnav}
+                options={{ headerShown: false}}
+            />  
+
             
             
             
