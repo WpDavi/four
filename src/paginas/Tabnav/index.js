@@ -16,7 +16,14 @@ export default function Tabnav(){
     return(
 
 
-        <Tab.Navigator>
+        <Tab.Navigator
+        screenOptions={{
+            tabBarStyle: { backgroundColor: '#161820' },
+            tabBarActiveTintColor:'#6C0F6D'
+                        
+          }}                
+        >
+
             <Tab.Screen name='Home' component={Home}/>
             <Tab.Screen name='New' component={New}/>
             <Tab.Screen name='Notificatin' component={Notificatin}/>
