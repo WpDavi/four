@@ -1,8 +1,6 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { createBottomTabNavigator} from '@react-navigation/bottom-tabs'
-import { useNavigation } from '@react-navigation/native'
-import {Entypo, Feather} from 'react-native-vector-icons'
-import {View, Text, Image, StyleSheet, TouchableOpacity} from 'react-native'
+import {View, Text, Image, Alert, StyleSheet, TouchableOpacity} from 'react-native'
 import {launchCamera, launchImageLibrary} from 'react-native-image-picker';
 
 import Home from './Home';
@@ -15,28 +13,52 @@ import Search from './Search';
 
 
 const Tab = createBottomTabNavigator();
-const CustomtabBarButton = ({children, onPress}) => (
-    <TouchableOpacity
-    style={{
-        top:-40,
-        justifyContent:'center',
-        alignItems:'center',
-    }}
-    onPress={onPress}
-    >
-        <View style={{
-            width:70,
-            height:70,
-            borderRadius: 35,
-            backgroundColor:'#e32f45',
-        }}>
-            {children}
-        </View>
-    </TouchableOpacity>
-)
+
+
 
 
 export default function Tabnav(){
+
+    const [avatar, setAvatar] = useState();
+
+    function imagePickerCallback(data){
+        console.log(data);
+    if (data.didCancel) {
+      Alert.alert(
+        "Cancelado",
+        "Envio de Image ou video cancelado",)
+    }
+    if (data.error) {
+        Alert.alert(
+            "Erro",
+            "Algo inesperado aconteceu",)
+    }
+    if (!data.uri){
+      return;
+    }
+    setAvatar(data);
+  }
+
+
+    const CustomtabBarButton = ({children, onPress}) => (
+        <TouchableOpacity
+        style={{
+            top:-40,
+            justifyContent:'center',
+            alignItems:'center',
+        }}
+        onPress={() => launchImageLibrary({}, imagePickerCallback ) }
+        >
+            <View style={{
+                width:70,
+                height:70,
+                borderRadius: 35,
+                backgroundColor:'#e32f45',
+            }}>
+                {children}
+            </View>
+        </TouchableOpacity>
+    )
     return(
 
 
