@@ -1,13 +1,12 @@
 import React from 'react'
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
+
 
 
 
 import Welcome from '../paginas/inicial';
 import Login from '../paginas/Login';
 import Cadastro from '../paginas/Cadastro'
-
 import Tabnav from '../paginas/Tabnav';
 
 
@@ -15,7 +14,7 @@ import Tabnav from '../paginas/Tabnav';
 
 
 const Stack = createNativeStackNavigator ();
-const Tab = createBottomTabNavigator ();
+
 
 
 export default function Routes(){
