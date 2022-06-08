@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import { createBottomTabNavigator} from '@react-navigation/bottom-tabs'
 import {View, Text, Image, Alert, StyleSheet, TouchableOpacity} from 'react-native'
-import {launchCamera, launchImageLibrary} from 'react-native-image-picker';
+import {launchImageLibrary } from 'react-native-image-picker';
+import {useNavigation } from '@react-navigation/native'
 
 import Home from './Home';
 import Pesquisa from './New'; 
@@ -12,12 +13,17 @@ import Search from './Search';
 
 
 
+
+
+
+
 const Tab = createBottomTabNavigator();
 
 
 
 
 export default function Tabnav(){
+    const navigation = useNavigation();
 
     const [avatar, setAvatar] = useState();
 

@@ -8,6 +8,7 @@ import Welcome from '../paginas/inicial';
 import Login from '../paginas/Login';
 import Cadastro from '../paginas/Cadastro'
 import Tabnav from '../paginas/Tabnav';
+import Post from '../paginas/Tabnav/Post';
 
 
 
@@ -40,6 +41,12 @@ export default function Routes(){
              <Stack.Screen
                 name='Tabnav'
                 component={Tabnav}
+                options={{ headerShown: false}}
+            />  
+
+            <Stack.Screen
+                name='Post'
+                component={Post}
                 options={{ headerShown: false}}
             />  
 
