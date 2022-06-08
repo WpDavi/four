@@ -45,16 +45,24 @@ export default function Tabnav(){
     setAvatar(data);
   }
 
+//onPress={() => launchImageLibrary({}, imagePickerCallback ) ({},navigation.navigate('Post')) }   
+//onPress={()=>{...}}
+//onPress={() => navigation.navigate('Cadastro')} 
 
     const CustomtabBarButton = ({children, onPress}) => (
+       
         <TouchableOpacity
         style={{
             top:-40,
             justifyContent:'center',
             alignItems:'center',
         }}
-        onPress={() => launchImageLibrary({}, imagePickerCallback ) }
-        >
+        onPress={()=>{launchImageLibrary({}, imagePickerCallback ), navigation.navigate('Post')} }  
+         >
+
+
+
+            
             <View style={{
                 width:70,
                 height:70,
@@ -63,8 +71,10 @@ export default function Tabnav(){
             }}>
                 {children}
             </View>
-        </TouchableOpacity>
+        </TouchableOpacity >
+       
     )
+
     return(
 
 
