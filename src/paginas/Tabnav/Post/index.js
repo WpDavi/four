@@ -1,10 +1,10 @@
 import React from "react";
-import {View, Text, Image, StyleSheet, TouchableOpacity, TextInput} from 'react-native'
+import {View, Text, Image, StyleSheet, TouchableOpacity, TextInput, SafeAreaView} from 'react-native'
 
 
 export default function Post() {
     return(
-        <View>
+        <SafeAreaView style={styles.container}>
 
             <View style={styles.containerheader}>
 
@@ -29,17 +29,34 @@ export default function Post() {
             
             </TextInput>
 
-            <Image style={{width:25, height: 25,}}
-            source={require('../../../imagens/cam.png')} />               
+            <Image style={{width:30, height: 30, position:'absolute', bottom:550, right: 40}}
+            source={require('../../../imagens/cam.png')} />  
+
+
+            
+            <View style={{width: 370, alignSelf:'center',  marginTop:170, alignItems:'flex-start'}}>
+
+            <Image style={{width:370, resizeMode:'contain', alignItems:'flex-start', alignSelf:'center',  }}
+            source={require('../../../imagens/wall.png')} /> 
+
+            
+
+            </View>   
+            
 
             
         
   
-        </View>
+        </SafeAreaView>
     );
 }
 
 const styles = StyleSheet.create({
+    container:{
+        flex:1
+    },
+    
+
     containerheader:{
         marginHorizontal: 30,
         marginTop:20,
