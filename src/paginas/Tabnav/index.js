@@ -45,9 +45,7 @@ export default function Tabnav(){
     setAvatar(data);
   }
 
-//onPress={() => launchImageLibrary({}, imagePickerCallback ) ({},navigation.navigate('Post')) }   
-//onPress={()=>{...}}
-//onPress={() => navigation.navigate('Cadastro')} 
+
 
     const CustomtabBarButton = ({children, onPress}) => (
        
@@ -57,7 +55,8 @@ export default function Tabnav(){
             justifyContent:'center',
             alignItems:'center',
         }}
-        onPress={()=>{launchImageLibrary({}, imagePickerCallback ), navigation.navigate('Post')} }  
+        onPress={()=>{launchImageLibrary({}, imagePickerCallback ), navigation.navigate('Post')} } 
+         
          >
 
 
